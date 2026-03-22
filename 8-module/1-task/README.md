@@ -158,11 +158,7 @@ let initialTopCoord = this.elem.getBoundingClientRect().top + window.pageYOffset
 Полученное значение мы будем сравнивать со степенью прокрутки страницы при каждом новом вызове метода:
 
 ```js
-if (window.pageYOffset > initialTopCoord) {
-  // плавающая корзина
-} else {
-  // корзина сверху
-}
+
 ```
 
 Если значение `window.pageYOffset` будет больше `initialTopCoordinate`, значит пользователь уже докрутил до верхнего края иконки корзины, и нам нужно поменять её позиционирование на фиксированное, и наоборот.
